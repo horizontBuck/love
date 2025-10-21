@@ -1573,7 +1573,7 @@ const createProductItem = (product) => {
                 <div class="list-action grid grid-cols-2 gap-3 px-5 absolute w-full bottom-5">
                     <div
                         class="quick-view-btn w-full text-button-uppercase py-2 text-center rounded-full duration-300 bg-white hover:bg-black hover:text-white">
-                        <span class="max-lg:hidden">Quick View</span>
+                        <span class="max-lg:hidden">Ver</span>
                         <i class="ph ph-eye lg:hidden text-xl"></i>
                         </div>
                         ${product.action === "add to cart"
@@ -1588,7 +1588,7 @@ const createProductItem = (product) => {
       : `
                             <div
                                 class="quick-shop-btn text-button-uppercase py-2 text-center rounded-full duration-500 bg-white hover:bg-black hover:text-white max-lg:hidden">
-                                Quick Shop</div>
+                                Agregar al carro</div>
                             <div
                                 class="add-cart-btn w-full text-button-uppercase py-2 text-center rounded-full duration-300 bg-white hover:bg-black hover:text-white lg:hidden"
                                 >
@@ -1826,13 +1826,13 @@ function addEventToProductItem(products) {
       if (quickviewIcon) {
         quickviewIcon.addEventListener("click", (e) => {
           e.stopPropagation();
-          // save prd to quick view in local storage
+          // save prd to Ver in local storage
           const productItem = quickviewIcon.closest(".product-item");
           const productId = productItem.getAttribute("data-item");
           let quickViewStore = localStorage.getItem("quickViewStore");
           quickViewStore = quickViewStore && [];
 
-          // add it to quick view
+          // add it to Ver
           const productToAdd = products?.find((item) => item.id === productId);
           if (productToAdd) {
             quickViewStore.push(productToAdd);

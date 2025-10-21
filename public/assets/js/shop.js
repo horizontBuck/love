@@ -524,7 +524,7 @@ function renderProducts(page, products = []) {
                             <div class="list-action grid grid-cols-2 gap-3 px-5 absolute w-full bottom-5 max-lg:hidden">
                                 <div
                                     class="quick-view-btn w-full text-button-uppercase py-2 text-center rounded-full duration-300 bg-white hover:bg-black hover:text-white">
-                                    <span class="max-lg:hidden">Quick View</span>
+                                    <span class="max-lg:hidden">Ver</span>
                                     <i class="ph ph-eye lg:hidden text-xl"></i>
                                 </div>
                                     ${product.action === 'add to cart' ? (
@@ -540,7 +540,7 @@ function renderProducts(page, products = []) {
                     `
                                         <div
                                             class="quick-shop-btn text-button-uppercase py-2 text-center rounded-full duration-500 bg-white hover:bg-black hover:text-white max-lg:hidden">
-                                            Quick Shop</div>
+                                            Agregar al carro</div>
                                         <div
                                             class="add-cart-btn w-full text-button-uppercase py-2 text-center rounded-full duration-300 bg-white hover:bg-black hover:text-white lg:hidden"
                                             >
@@ -685,7 +685,7 @@ function renderProducts(page, products = []) {
                                 </div>
                                 <div class="action w-fit flex flex-col items-center justify-center">
                                     <div class="quick-shop-btn button-main whitespace-nowrap py-2 px-9 max-lg:px-5 rounded-full bg-white text-black border border-black hover:bg-black hover:text-white">
-                                        Quick Shop
+                                        Agregar al carro
                                     </div>
                                     <div class="list-action-right flex items-center justify-center gap-3 mt-4">
                                         <div
@@ -704,7 +704,7 @@ function renderProducts(page, products = []) {
                                         <div
                                             class="quick-view-btn quick-view-btn-list w-[32px] h-[32px] flex items-center justify-center rounded-full bg-white duration-300 relative">
                                             <div class="tag-action bg-black text-white caption2 px-1.5 py-0.5 rounded-sm">
-                                                Quick View</div>
+                                                Ver</div>
                                             <i class="ph ph-eye text-lg"></i>
                                         </div>
                                     </div>
